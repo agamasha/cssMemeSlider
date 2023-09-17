@@ -2,6 +2,7 @@ body {
     background-color: #f4acb7;
     box-sizing: border-box;
     margin: 0;
+    overflow: hidden;
 }
 
 .wrapper {
@@ -15,10 +16,11 @@ body {
     margin: auto;
     margin-top: 3vh;
     width: 40vw;
-    height: 70vh;
+    height: fit-content;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 input {
@@ -28,35 +30,135 @@ input {
 .img-carousel {
     display: flex;
     flex-direction: row;
-    overflow: hidden;
     margin: auto;
-    width: 60%;
+    width: 25vw;
+    transition: all 1s;
+    overflow: hidden;
+}
+
+.img-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 25vw;
+    transition: all 1s;
 }
 
 img {
+    margin-top: 3vh;
     width: 100%;
 }
 
 .text-carousel {
+    margin-top: 1vh;
     display: flex;
     flex-direction: row;
+    width: 20vw;
+    transition: all 1s;
     overflow: hidden;
-    width: 50%;
+}
+
+.text-wrapper {
+    margin-top: 1vh;
+    display: flex;
+    flex-direction: row;
+    width: 20vw;
+    transition: all 1s;
 }
 
 .text {
     width: 400%;
     white-space: nowrap;
     margin-bottom: 3vh;
-    margin-left: 3vw;
+    margin-left: 4vw;
+    min-width: 15vw;
+    text-align: left;
 }
 
 .pagination {
     display: flex;
+    margin-left: 20%;
 }
 
 .big-circle {
-    background-color: blue;
+    margin-top: 1vh;
+    background-color: transparent;
     width: 2vw;
     height: 2vw;
+    display: flex;
+}
+
+.big-circle:hover {
+    cursor: pointer;
+}
+
+.big-circle:hover > .small-circle {
+    background-color: #FFCAD4;
+    cursor: pointer;
+}
+
+.small-circle {
+    background-color: #d8e2dc;
+    width: 1vw;
+    height: 1vw;
+    margin: auto;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.small-circle:hover {
+    background-color: #FFCAD4;
+    cursor: pointer;
+}
+
+.big-circle:active .small-circle {
+    background-color: white;
+}
+
+#pic1:checked ~ .img-carousel > .img-wrapper {
+    transform: translateX(0vw);
+}
+
+#pic1:checked ~ .text-carousel > .text-wrapper {
+    transform: translateX(0vw);
+}
+
+#pic1:checked ~ .pagination .label1 .big-circle .small-circle {
+    background-color: thistle;
+}
+
+#pic2:checked ~ .img-carousel > .img-wrapper {
+    transform: translateX(-25vw);
+}
+
+#pic2:checked ~ .text-carousel > .text-wrapper {
+    transform: translateX(-20vw);
+}
+
+#pic2:checked ~ .pagination .label2 .big-circle .small-circle {
+    background-color: thistle;
+}
+
+#pic3:checked ~ .img-carousel > .img-wrapper {
+    transform: translateX(-50vw);
+}
+
+#pic3:checked ~ .text-carousel > .text-wrapper {
+    transform: translateX(-38vw);
+}
+
+#pic3:checked ~ .pagination .label3 .big-circle .small-circle {
+    background-color: thistle;
+}
+
+#pic4:checked ~ .img-carousel > .img-wrapper {
+    transform: translateX(-75vw);
+}
+
+#pic4:checked ~ .text-carousel > .text-wrapper {
+    transform: translateX(-58vw);
+}
+
+#pic4:checked ~ .pagination .label4 .big-circle .small-circle {
+    background-color: thistle;
 }
