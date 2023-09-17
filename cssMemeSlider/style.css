@@ -2,7 +2,6 @@ body {
     background-color: #f4acb7;
     box-sizing: border-box;
     margin: 0;
-    overflow: hidden;
 }
 
 .wrapper {
@@ -15,7 +14,7 @@ body {
     background-color: #9D8189;
     margin: auto;
     margin-top: 3vh;
-    width: 40vw;
+    width: 50vw;
     height: fit-content;
     display: flex;
     flex-direction: row;
@@ -31,7 +30,7 @@ input {
     display: flex;
     flex-direction: row;
     margin: auto;
-    width: 25vw;
+    width: 35vw;
     transition: all 1s;
     overflow: hidden;
 }
@@ -40,7 +39,7 @@ input {
     display: flex;
     flex-direction: row;
     margin: auto;
-    width: 25vw;
+    width: 35vw;
     transition: all 1s;
 }
 
@@ -68,7 +67,7 @@ img {
 
 .text {
     width: 400%;
-    white-space: nowrap;
+    white-space: wrap;
     margin-bottom: 3vh;
     margin-left: 4vw;
     min-width: 15vw;
@@ -128,7 +127,7 @@ img {
 }
 
 #pic2:checked ~ .img-carousel > .img-wrapper {
-    transform: translateX(-25vw);
+    transform: translateX(-35vw);
 }
 
 #pic2:checked ~ .text-carousel > .text-wrapper {
@@ -140,7 +139,7 @@ img {
 }
 
 #pic3:checked ~ .img-carousel > .img-wrapper {
-    transform: translateX(-50vw);
+    transform: translateX(-70vw);
 }
 
 #pic3:checked ~ .text-carousel > .text-wrapper {
@@ -152,7 +151,7 @@ img {
 }
 
 #pic4:checked ~ .img-carousel > .img-wrapper {
-    transform: translateX(-75vw);
+    transform: translateX(-105vw);
 }
 
 #pic4:checked ~ .text-carousel > .text-wrapper {
