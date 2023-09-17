@@ -1,0 +1,62 @@
+body {
+    background-color: #f4acb7;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.wrapper {
+    text-align: center;
+    width: 97vw;
+    height: 100vh;
+}
+
+.frame {
+    background-color: #9D8189;
+    margin: auto;
+    margin-top: 3vh;
+    width: 40vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+input {
+    display: none;
+}
+
+.img-carousel {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    margin: auto;
+    width: 60%;
+}
+
+img {
+    width: 100%;
+}
+
+.text-carousel {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 50%;
+}
+
+.text {
+    width: 400%;
+    white-space: nowrap;
+    margin-bottom: 3vh;
+    margin-left: 3vw;
+}
+
+.pagination {
+    display: flex;
+}
+
+.big-circle {
+    background-color: blue;
+    width: 2vw;
+    height: 2vw;
+}

@@ -3,9 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Meme Slider</title>
+    <link rel = "icon" href = "img/pic.png">
+    <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
-    
+    <div class = "wrapper">
+        <div class = "frame">
+            <input type = "radio" id = "pic1" name = "choice" checked>
+            <input type = "radio" id = "pic2" name = "choice">
+            <input type = "radio" id = "pic3" name = "choice">
+            <input type = "radio" id = "pic4" name = "choice">
+            <div class = "img-carousel">
+                <img src = "img/meme1.jpg">
+                <img src = "img/meme2.jpg">
+                <img src = "img/meme3.jpg">
+                <img src = "img/meme4.jpg">
+            </div>
+            <div class = "text-carousel">
+                <div class = "text">Я и 4 проверяющих на cross-check</div>
+                <div class = "text">Страшно жесть...</div>
+                <div class = "text">Не пейте воду!</div>
+                <div class = "text">Спасибо, что посмотрел мои мемы!</div>
+            </div>
+            <div class = "pagination">
+                <label for = "pic1"><div class = "big-circle"><div class = "small-circle"></div></div></label>
+                <label for = "pic2"><div class = "big-circle"><div class = "small-circle"></div></div></label>
+                <label for = "pic3"><div class = "big-circle"><div class = "small-circle"></div></div></label>
+                <label for = "pic4"><div class = "big-circle"><div class = "small-circle"></div></div></label>
+            </div>            
+        </div>
+    </div>
 </body>
 </html>
