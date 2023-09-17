@@ -7,7 +7,7 @@ body {
 .wrapper {
     text-align: center;
     width: 97vw;
-    height: 100vh;
+    height: fit-content;
 }
 
 .frame {
@@ -48,11 +48,17 @@ img {
     width: 100%;
 }
 
+.text-button-wrapper {
+    display: flex;
+    margin: auto;
+    width: 35vw;
+}
+
 .text-carousel {
     margin-top: 1vh;
     display: flex;
     flex-direction: row;
-    width: 20vw;
+    width: 15vw;
     transition: all 1s;
     overflow: hidden;
 }
@@ -61,7 +67,7 @@ img {
     margin-top: 1vh;
     display: flex;
     flex-direction: row;
-    width: 20vw;
+    width: 15vw;
     transition: all 1s;
 }
 
@@ -69,14 +75,15 @@ img {
     width: 400%;
     white-space: wrap;
     margin-bottom: 3vh;
-    margin-left: 4vw;
     min-width: 15vw;
+    max-width: 15vw;
     text-align: left;
 }
 
 .pagination {
     display: flex;
-    margin-left: 20%;
+    margin-left: auto;
+    margin-right: -0.5vw;
 }
 
 .big-circle {
@@ -118,11 +125,11 @@ img {
     transform: translateX(0vw);
 }
 
-#pic1:checked ~ .text-carousel > .text-wrapper {
+#pic1:checked ~ .text-button-wrapper .text-carousel > .text-wrapper {
     transform: translateX(0vw);
 }
 
-#pic1:checked ~ .pagination .label1 .big-circle .small-circle {
+#pic1:checked ~ .text-button-wrapper .pagination .label1 .big-circle .small-circle {
     background-color: thistle;
 }
 
@@ -130,11 +137,11 @@ img {
     transform: translateX(-35vw);
 }
 
-#pic2:checked ~ .text-carousel > .text-wrapper {
-    transform: translateX(-20vw);
+#pic2:checked ~ .text-button-wrapper .text-carousel > .text-wrapper {
+    transform: translateX(-15vw);
 }
 
-#pic2:checked ~ .pagination .label2 .big-circle .small-circle {
+#pic2:checked ~ .text-button-wrapper .pagination .label2 .big-circle .small-circle {
     background-color: thistle;
 }
 
@@ -142,11 +149,11 @@ img {
     transform: translateX(-70vw);
 }
 
-#pic3:checked ~ .text-carousel > .text-wrapper {
-    transform: translateX(-38vw);
+#pic3:checked ~ .text-button-wrapper .text-carousel > .text-wrapper {
+    transform: translateX(-30vw);
 }
 
-#pic3:checked ~ .pagination .label3 .big-circle .small-circle {
+#pic3:checked ~ .text-button-wrapper .pagination .label3 .big-circle .small-circle {
     background-color: thistle;
 }
 
@@ -154,10 +161,10 @@ img {
     transform: translateX(-105vw);
 }
 
-#pic4:checked ~ .text-carousel > .text-wrapper {
-    transform: translateX(-58vw);
+#pic4:checked ~ .text-button-wrapper .text-carousel > .text-wrapper {
+    transform: translateX(-45vw);
 }
 
-#pic4:checked ~ .pagination .label4 .big-circle .small-circle {
+#pic4:checked ~ .text-button-wrapper .pagination .label4 .big-circle .small-circle {
     background-color: thistle;
 }
